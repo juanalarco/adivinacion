@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adivinacion Juan Alarco</title>
+
+    <script>
+var numero = prompt("Dime un numero");
+var numeroadivinar = Math.floor((Math.random() * 100) + 1);;
+
+while (numero!=numeroadivinar) {
+  if (numeroadivinar>numero) {
+    alert("Te has quedado corto");
+  var numero = prompt("Dime otro numero");
+  }
+  else if (numeroadivinar<numero) {
+      alert("Te has pasado");
+  var numero = prompt("Dime otro numero");
+  }
+}
+if (numeroadivinar=numero) {
+  alert("Acertaste, enhorabuena");
+
+}
+
+    </script>
+  </head>
+  <body>
+
+
+
+
+  </body>
+</html>
